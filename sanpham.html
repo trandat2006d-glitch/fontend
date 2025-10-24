@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DATPHONE - Trang chủ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      overflow-x: hidden; 
+    }
+    .marquee-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 20s linear infinite;
+    }
+    @keyframes marquee {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+  <!-- Banner khuyến mãi bằng hình ảnh -->
+<div class="text-center">
+  <img src="img/bannerlogo/banner-sale.png" class="img-fluid w-100" alt="Banner khuyến mãi">
+</div>
+
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-yellow">
+    <div class="container-fluid">
+    <!-- Logo + tên sát trái -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/bannerlogo/logo.png" alt="Logo" width="90" height="90" class="me-2">
+      <span class="fw-bold fs-1 text-dark">DATPHONE</span>
+    </a>
+
+    <!-- Nút thu gọn menu (mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu sát phải -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+        <li class="nav-item"><a class="nav-link fs-4 mx-3" href="index.html">🏠Trang chủ</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 mx-3" href="sanpham.html">📦Sản phẩm</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 mx-3" href="giohang.html">🛒Giỏ hàng</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 mx-3" href="taikhoan.html">👤Tài khoản</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+
+
+</nav>
+
+  <!--menu phụ-->
+  <div class="bg-dark text-white py-3 sub-menu">
+    <div class="container d-flex justify-content-center gap-5 fw-bold align-items-center">
+
+      <a href="phukien.html" class="text-white fs-5 mx-5 text-decoration-none">🎧Phụ kiện</a>
+      <a href="dienthoai.html" class="text-white fs-5 mx-5 text-decoration-none">📱Điện thoại</a>
+      <a href="laptop.html" class="text-white fs-5 mx-5 text-decoration-none">💻Laptop</a>
+      <a href="dongho.html" class="text-white fs-5 mx-5 text-decoration-none">⌚Đồng hồ</a>
+      <a href="mayanh.html" class="text-white fs-5 mx-5 text-decoration-none">📷Máy ảnh</a>
+    </div>
+  </div>
+  <!-- Điện thoại -->
+  <div class="products-section container my-5 ">
+    <h2 class="text-center mb-4 text-primary fs-1">Điện thoại</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+      <!-- dtSP 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/dienthoai/ip17promax.jpg" class="card-img-top rounded-3 p-2" alt="sp1">
+          <div class="card-body text-center">
+            <h6>Iphone 17 pro max</h6>
+            <p class="text-danger fw-bold">37,990,000đ</p>
+            <button class="btn btn-success mb-2" onclick="addToCart('Iphone 17 pro max')">Thêm vào giỏ</button>
+            <a href="product.html?id=1" class="btn btn-info mb-2">Chi tiết</a>
+            <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- dtSP 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/dienthoai/xiaomiredmi13.jpg" class="card-img-top rounded-3 p-2" alt="sp2">
+          <div class="card-body text-center">
+            <h6>Xiaomi Redmi 13</h6>
+            <p class="text-danger fw-bold">4,220,000đ</p>
+            <button class="btn btn-success mb-2" onclick="addToCart('Xiaomi Redmi 13')">Thêm vào giỏ</button>
+            <a href="product.html?id=2" class="btn btn-info mb-2">Chi tiết</a>
+            <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- dtSP 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/dienthoai/opporeno145g.jpg" class="card-img-top rounded-3 p-2" alt="sp3">
+          <div class="card-body text-center">
+            <h6>Oppo Reno 14 5G</h6>
+            <p class="text-danger fw-bold">11.290.000đ</p>
+            <button class="btn btn-success mb-2" onclick="addToCart('Oppo Reno 14 5G')">Thêm vào giỏ</button>
+            <a href="product.html?id=3" class="btn btn-info mb-2">Chi tiết</a>
+            <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- dtSP 4 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/dienthoai/honor400.jpg" class="card-img-top rounded-3 p-2" alt="sp4">
+          <div class="card-body text-center">
+            <h6>Honor 400</h6>
+            <p class="text-danger fw-bold">13.690.000đ</p>
+            <button class="btn btn-success mb-2" onclick="addToCart('Honor 400')">Thêm vào giỏ</button>
+            <a href="product.html?id=4" class="btn btn-info mb-2">Chi tiết</a>
+            <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- dtSP 5 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/dienthoai/realme155g.jpg" class="card-img-top rounded-3 p-2" alt="sp5">
+          <div class="card-body text-center">
+            <h6>Realme 15 5G</h6>
+            <p class="text-danger fw-bold">11.490.000đ</p>
+            <button class="btn btn-success mb-2" onclick="addToCart('Realme 15 5G')">Thêm vào giỏ</button>
+            <a href="product.html?id=5" class="btn btn-info mb-2">Chi tiết</a>
+            <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- dtSP 6 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/dienthoai/samsungs24ultra5g.jpg" class="card-img-top rounded-3 p-2" alt="sp6">
+          <div class="card-body text-center">
+            <h6>Samsung S24 Ultra 5G</h6>
+            <p class="text-danger fw-bold">22.290.000đ</p>
+            <button class="btn btn-success mb-2" onclick="addToCart('Samsung S24 Ultra 5G')">Thêm vào giỏ</button>
+            <a href="product.html?id=6" class="btn btn-info mb-2">Chi tiết</a>
+            <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- dtSP 7 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/dienthoai/vivov40lite.jpg" class="card-img-top rounded-3 p-2" alt="sp7">
+          <div class="card-body text-center">
+            <h6>Vivo V40 Lite</h6>
+            <p class="text-danger fw-bold">6.540.000đ</p>
+            <button class="btn btn-success mb-2" onclick="addToCart('Vivo V40 Lite')">Thêm vào giỏ</button>
+            <a href="product.html?id=7" class="btn btn-info mb-2">Chi tiết</a>
+            <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- dtSP 8 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/dienthoai/xiaomi15ultra5g.jpg" class="card-img-top rounded-3 p-2" alt="sp8">
+          <div class="card-body text-center">
+            <h6>Xiaomi 15 Ultra 5G</h6>
+            <p class="text-danger fw-bold">31.990.000đ</p>
+            <button class="btn btn-success mb-2" onclick="addToCart('Xiaomi 15 Ultra 5G')">Thêm vào giỏ</button>
+            <a href="product.html?id=8" class="btn btn-info mb-2">Chi tiết</a>
+            <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- laptop -->
+  <div class="products-section container my-5 ">
+    <h2 class="text-center mb-4 text-primary fs-1">Đồng hồ</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+      <!-- sp9 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/dongho/amsunggalaxyfit3.webp" class="card-img-top rounded-3 p-2" alt="Samsung Galaxy Fit 3">
+    <div class="card-body text-center">
+      <h6>Samsung Galaxy Fit 3</h6>
+      <p class="text-danger fw-bold">1.490.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Samsung Galaxy Fit 3')">Thêm vào giỏ</button>
+      <a href="product.html?id=9" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- sp10 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/dongho/applewatchse2.webp" class="card-img-top rounded-3 p-2" alt="Apple Watch SE 2">
+    <div class="card-body text-center">
+      <h6>Apple Watch SE 2</h6>
+      <p class="text-danger fw-bold">6.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Apple Watch SE 2')">Thêm vào giỏ</button>
+      <a href="product.html?id=10" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- sp11 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/dongho/applewatchseies11.webp" class="card-img-top rounded-3 p-2" alt="Apple Watch Series 11">
+    <div class="card-body text-center">
+      <h6>Apple Watch Series 11</h6>
+      <p class="text-danger fw-bold">10.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Apple Watch Series 11')">Thêm vào giỏ</button>
+      <a href="product.html?id=11" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- sp12 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/dongho/applewatchseires10.webp" class="card-img-top rounded-3 p-2" alt="Apple Watch Series 10">
+    <div class="card-body text-center">
+      <h6>Apple Watch Series 10</h6>
+      <p class="text-danger fw-bold">12.490.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Apple Watch Series 10')">Thêm vào giỏ</button>
+      <a href="product.html?id=12" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- sp13 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/dongho/huaweiwatch5.webp" class="card-img-top rounded-3 p-2" alt="Huawei Watch 5">
+    <div class="card-body text-center">
+      <h6>Huawei Watch 5</h6>
+      <p class="text-danger fw-bold">8.490.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Huawei Watch 5')">Thêm vào giỏ</button>
+      <a href="product.html?id=13" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- sp14 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/dongho/huaweiwatchgt4.webp" class="card-img-top rounded-3 p-2" alt="Huawei Watch GT 4">
+    <div class="card-body text-center">
+      <h6>Huawei Watch GT 4</h6>
+      <p class="text-danger fw-bold">6.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Huawei Watch GT 4')">Thêm vào giỏ</button>
+      <a href="product.html?id=14" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- sp15 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/dongho/myalok64.webp" class="card-img-top rounded-3 p-2" alt="myAlo K64">
+    <div class="card-body text-center">
+      <h6>myAlo K64</h6>
+      <p class="text-danger fw-bold">990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('myAlo K64')">Thêm vào giỏ</button>
+      <a href="product.html?id=15" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- sp16 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/dongho/xiaomiredmiwatch5active.webp" class="card-img-top rounded-3 p-2" alt="Xiaomi Redmi Watch 5 Active">
+    <div class="card-body text-center">
+      <h6>Xiaomi Redmi Watch 5 Active</h6>
+      <p class="text-danger fw-bold">1.790.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Xiaomi Redmi Watch 5 Active')">Thêm vào giỏ</button>
+      <a href="product.html?id=16" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+    <!--laptop-->
+  <div class="products-section container my-5 ">
+    <h2 class="text-center mb-4 text-primary fs-1">Laptop</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+     <!-- 17 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/laptop/asustufgaminga15.jpg" class="card-img-top rounded-3 p-2" alt="ASUS TUF Gaming A15">
+    <div class="card-body text-center">
+      <h6>ASUS TUF Gaming A15</h6>
+      <p class="text-danger fw-bold">27.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('ASUS TUF Gaming A15')">Thêm vào giỏ</button>
+      <a href="product.html?id=17" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 18 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/laptop/asustufgamingf16.jpg" class="card-img-top rounded-3 p-2" alt="ASUS TUF Gaming F16">
+    <div class="card-body text-center">
+      <h6>ASUS TUF Gaming F16</h6>
+      <p class="text-danger fw-bold">25.490.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('ASUS TUF Gaming F16')">Thêm vào giỏ</button>
+      <a href="product.html?id=18" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 19 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/laptop/asusvivobook15.jpg" class="card-img-top rounded-3 p-2" alt="ASUS Vivobook 15">
+    <div class="card-body text-center">
+      <h6>ASUS Vivobook 15</h6>
+      <p class="text-danger fw-bold">15.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('ASUS Vivobook 15')">Thêm vào giỏ</button>
+      <a href="product.html?id=19" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 20 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/laptop/dellinspiron15.jpg" class="card-img-top rounded-3 p-2" alt="Dell Inspiron 15">
+    <div class="card-body text-center">
+      <h6>Dell Inspiron 15</h6>
+      <p class="text-danger fw-bold">18.490.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Dell Inspiron 15')">Thêm vào giỏ</button>
+      <a href="product.html?id=20" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 21 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/laptop/hp15fc0085au7430u.jpg" class="card-img-top rounded-3 p-2" alt="HP 15-fc0085AU">
+    <div class="card-body text-center">
+      <h6>HP 15-fc0085AU</h6>
+      <p class="text-danger fw-bold">14.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('HP 15-fc0085AU')">Thêm vào giỏ</button>
+      <a href="product.html?id=21" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 22 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/laptop/macbookair13inchm4.jpg" class="card-img-top rounded-3 p-2" alt="MacBook Air 13 inch M4">
+    <div class="card-body text-center">
+      <h6>MacBook Air 13 inch M4</h6>
+      <p class="text-danger fw-bold">33.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('MacBook Air 13 inch M4')">Thêm vào giỏ</button>
+      <a href="product.html?id=22" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 23 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/laptop/macbookpro14inchm4.jpg" class="card-img-top rounded-3 p-2" alt="MacBook Pro 14 inch M4">
+    <div class="card-body text-center">
+      <h6>MacBook Pro 14 inch M4</h6>
+      <p class="text-danger fw-bold">47.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('MacBook Pro 14 inch M4')">Thêm vào giỏ</button>
+      <a href="product.html?id=23" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 24 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/laptop/msigamingthin15.jpg" class="card-img-top rounded-3 p-2" alt="MSI Gaming Thin 15">
+    <div class="card-body text-center">
+      <h6>MSI Gaming Thin 15</h6>
+      <p class="text-danger fw-bold">22.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('MSI Gaming Thin 15')">Thêm vào giỏ</button>
+      <a href="product.html?id=24" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+ <!-- Sản phẩm đề xuất -->
+  <div class="products-section container my-5 ">
+    <h2 class="text-center mb-4 text-primary fs-1">Máy ảnh</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <!-- 25 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/mayanh/cannoneosr5.webp" class="card-img-top rounded-3 p-2" alt="Canon EOS R50">
+    <div class="card-body text-center">
+      <h6>Canon EOS R50</h6>
+      <p class="text-danger fw-bold">21.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Canon EOS R50')">Thêm vào giỏ</button>
+      <a href="product.html?id=25" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 26 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/mayanh/canoneosm10.webp" class="card-img-top rounded-3 p-2" alt="Sony ZV-E10">
+    <div class="card-body text-center">
+      <h6>Sony ZV-E10</h6>
+      <p class="text-danger fw-bold">20.490.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Sony ZV-E10')">Thêm vào giỏ</button>
+      <a href="product.html?id=26" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 27 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/mayanh/canoneosrp.webp" class="card-img-top rounded-3 p-2" alt="Fujifilm X-S20">
+    <div class="card-body text-center">
+      <h6>Fujifilm X-S20</h6>
+      <p class="text-danger fw-bold">32.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Fujifilm X-S20')">Thêm vào giỏ</button>
+      <a href="product.html?id=27" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 28 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/mayanh/fujifilmx-t5.webp" class="card-img-top rounded-3 p-2" alt="Nikon Z30">
+    <div class="card-body text-center">
+      <h6>Nikon Z30</h6>
+      <p class="text-danger fw-bold">18.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Nikon Z30')">Thêm vào giỏ</button>
+      <a href="product.html?id=28" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 29 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/mayanh/ricohgrIIIx.webp" class="card-img-top rounded-3 p-2" alt="Canon EOS R10">
+    <div class="card-body text-center">
+      <h6>Canon EOS R10</h6>
+      <p class="text-danger fw-bold">27.490.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Canon EOS R10')">Thêm vào giỏ</button>
+      <a href="product.html?id=29" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 30 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/mayanh/sonyzv-1f.webp" class="card-img-top rounded-3 p-2" alt="Panasonic Lumix GX9">
+    <div class="card-body text-center">
+      <h6>Panasonic Lumix GX9</h6>
+      <p class="text-danger fw-bold">19.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Panasonic Lumix GX9')">Thêm vào giỏ</button>
+      <a href="product.html?id=30" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 31 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/mayanh/sonyzv1.webp" class="card-img-top rounded-3 p-2" alt="Olympus OM-D E-M10 Mark IV">
+    <div class="card-body text-center">
+      <h6>Olympus OM-D E-M10 Mark IV</h6>
+      <p class="text-danger fw-bold">22.490.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Olympus OM-D E-M10 Mark IV')">Thêm vào giỏ</button>
+      <a href="product.html?id=31" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 32 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/mayanh/sonyzv1II.webp" class="card-img-top rounded-3 p-2" alt="Sony A7C II">
+    <div class="card-body text-center">
+      <h6>Sony A7C II</h6>
+      <p class="text-danger fw-bold">49.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Sony A7C II')">Thêm vào giỏ</button>
+      <a href="product.html?id=32" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <!-- máy ảnh -->  
+ <div class="products-section container my-5 ">
+  <h2 class="text-center mb-4 text-primary fs-1">Phụ kiện</h2>
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+
+ <!-- 33 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/phukien/airpods4.jpg" class="card-img-top rounded-3 p-2" alt="Apple AirPods 4">
+    <div class="card-body text-center">
+      <h6>Apple AirPods 4</h6>
+      <p class="text-danger fw-bold">5.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Apple AirPods 4')">Thêm vào giỏ</button>
+      <a href="product.html?id=33" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 34 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/phukien/banphimakkotac87.jpg" class="card-img-top rounded-3 p-2" alt="Bàn phím cơ Akko TAC 87">
+    <div class="card-body text-center">
+      <h6>Bàn phím cơ Akko TAC 87</h6>
+      <p class="text-danger fw-bold">2.190.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Bàn phím cơ Akko TAC 87')">Thêm vào giỏ</button>
+      <a href="product.html?id=34" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 35 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/phukien/captypeclghtning1mava.jpg" class="card-img-top rounded-3 p-2" alt="Cáp sạc Type-C to Lightning AVA+ 1m 27W">
+    <div class="card-body text-center">
+      <h6>Cáp sạc Type-C to Lightning AVA+ 1m 27W</h6>
+      <p class="text-danger fw-bold">290.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Cáp sạc Type-C to Lightning AVA+ 1m 27W')">Thêm vào giỏ</button>
+      <a href="product.html?id=35" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 36 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/phukien/chuotphillipsspk77448.jpg" class="card-img-top rounded-3 p-2" alt="Chuột không dây Philips SPK7744">
+    <div class="card-body text-center">
+      <h6>Chuột không dây Philips SPK7744</h6>
+      <p class="text-danger fw-bold">390.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Chuột không dây Philips SPK7744')">Thêm vào giỏ</button>
+      <a href="product.html?id=36" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 37 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/phukien/laobluetoothjblflip7.jpg" class="card-img-top rounded-3 p-2" alt="Loa Bluetooth JBL Flip 7">
+    <div class="card-body text-center">
+      <h6>Loa Bluetooth JBL Flip 7</h6>
+      <p class="text-danger fw-bold">2.990.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Loa Bluetooth JBL Flip 7')">Thêm vào giỏ</button>
+      <a href="product.html?id=37" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 38 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/phukien/sacbaseuspalmcczc30us.jpg" class="card-img-top rounded-3 p-2" alt="Củ sạc nhanh Baseus Palm CCZC30US 30W">
+    <div class="card-body text-center">
+      <h6>Củ sạc nhanh Baseus Palm CCZC30US 30W</h6>
+      <p class="text-danger fw-bold">390.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Củ sạc nhanh Baseus Palm CCZC30US 30W')">Thêm vào giỏ</button>
+      <a href="product.html?id=38" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 39 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/phukien/tai-nghe-bluetooth-chup-tai-sony-wh-ch520.jpg" class="card-img-top rounded-3 p-2" alt="Tai nghe Bluetooth chụp tai Sony WH-CH520">
+    <div class="card-body text-center">
+      <h6>Tai nghe Bluetooth chụp tai Sony WH-CH520</h6>
+      <p class="text-danger fw-bold">1.890.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Tai nghe Bluetooth chụp tai Sony WH-CH520')">Thêm vào giỏ</button>
+      <a href="product.html?id=39" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+<!-- 40 -->
+<div class="col">
+  <div class="card h-100">
+    <img src="img/phukien/ugreen130wpb721.jpg" class="card-img-top rounded-3 p-2" alt="Sạc dự phòng Ugreen 130W PB721 20.000mAh">
+    <div class="card-body text-center">
+      <h6>Sạc dự phòng Ugreen 130W PB721 20.000mAh</h6>
+      <p class="text-danger fw-bold">2.490.000đ</p>
+      <button class="btn btn-success mb-2" onclick="addToCart('Sạc dự phòng Ugreen 130W PB721 20.000mAh')">Thêm vào giỏ</button>
+      <a href="product.html?id=40" class="btn btn-info mb-2">Chi tiết</a>
+      <button class="btn btn-warning mb-2" onclick="purchase()">Mua</button>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+  
+
+ <!-- FOOTER -->
+<footer class="bg-warning text-dark pt-4 mt-5 border-top shadow-lg">
+
+  <!-- Form hỗ trợ -->
+  <div class="container">
+    <h5 class="text-center fw-bold mb-3">💬 Gửi câu hỏi hỗ trợ</h5>
+    <form id="feedbackForm" class="d-flex justify-content-center mb-4">
+      <input type="text" class="form-control w-50 me-2 shadow-sm" placeholder="Nhập câu hỏi hỗ trợ...">
+      <button type="submit" class="btn btn-dark px-4">Gửi</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('feedbackForm');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Cảm ơn bạn đã gửi câu hỏi! Chúng tôi sẽ phản hồi sớm nhất có thể.');
+      form.reset();
+    });
+  </script>
+
+  <!-- Thông tin footer -->
+  <div class="container">
+    <div class="row align-items-start text-center text-md-start">
+      <!-- Cột 1: Logo -->
+      <div class="col-md-3 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+        <img src="img/bannerlogo/logo.png" alt="Logo DATPHONE" width="120" height="120" class="rounded shadow-sm mb-2">
+        <p class="fw-bold mt-2 mb-0">CTY TNHH DATPHONE</p>
+      </div>
+
+      <!-- Cột 2: Liên hệ -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold text-uppercase">Liên hệ</h6>
+        <p class="mb-1">📍 123 Đường số 7, TP.HCM</p>
+        <p class="mb-1">📞 0123 456 789</p>
+        <p class="mb-0">📧 datphone@gmail.com</p>
+      </div>
+
+      <!-- Cột 3: Theo dõi -->
+      <div class="col-md-3 mb-4 mb-md-0">
+        <h6 class="fw-bold text-uppercase">Theo dõi chúng tôi</h6>
+        <p class="mb-1">🌐 Facebook | Instagram | Zalo</p>
+        <p>🕒 Giờ làm việc: 8h00 - 21h00</p>
+      </div>
+
+      <!-- Cột 4: Bản đồ -->
+      <div class="col-md-3">
+        <h6 class="fw-bold text-uppercase mb-2">Bản đồ</h6>
+        <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.170505560965!2d106.7025677750165!3d10.800724389341513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d2723e0343%3A0xf53d40cbbe32b0d3!2zMTIzIMSQLiDEkOG7i25nIFPhu5EgNywgUGjGsOG7nW5nIDcsIFF14bqtbiAxLCBUUC5IQ00!5e0!3m2!1svi!2s!4v1698063580000!5m2!1svi!2s"
+            width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
