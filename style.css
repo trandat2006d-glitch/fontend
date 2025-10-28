@@ -132,3 +132,18 @@ body {
         .carousel-indicators .active {
             opacity: 1;
         }
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    text-align: center;         /* Căn chữ giữa */
+  }
+
+  .navbar-nav {
+    margin: 0 auto;             /* Căn giữa danh sách */
+  }
+
+  .navbar-nav .nav-item {
+    display: block;             /* Mỗi mục 1 dòng */
+    margin: 8px 0;              /* Thêm khoảng cách cho dễ nhìn */
+  }
+}
+  

@@ -5,26 +5,33 @@
   <title>Chi tiết sản phẩm</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    body { overflow-x: hidden; }
+ <style>
+    body {
+      overflow-x: hidden; 
+    }
     .marquee-text {
       display: inline-block;
       white-space: nowrap;
       animation: marquee 20s linear infinite;
     }
     @keyframes marquee {
-      0% { transform: translateX(100%); }
+      0%   { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
+    .con-cho{
+      position: fixed; /* Ghim header cố định */
+    top: 0; /* Căn header ở đầu trang */
+    left: 0; /* Căn header sát bên trái */
+    width: 100%; /* Đảm bảo header chiếm toàn bộ chiều ngang */
+    z-index: 1000;
+    }
+    
   </style>
-</head>
-<body>
-  <!-- Banner khuyến mãi bằng hình ảnh -->
-<div class="text-center">
-  <img src="img/bannerlogo/banner-sale.png" class="img-fluid w-100" alt="Banner khuyến mãi">
-</div>
-<!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light custom-yellow">
+  
+
+  <!-- Navbar -->
+    <div class="con-cho">
+      <nav class="navbar navbar-expand-lg navbar-light custom-yellow ">
     <div class="container-fluid">
     <!-- Logo + tên sát trái -->
     <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -38,7 +45,7 @@
     </button>
 
     <!-- Menu sát phải -->
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
         <li class="nav-item"><a class="nav-link fs-4 mx-3" href="index.html">🏠Trang chủ</a></li>
         <li class="nav-item"><a class="nav-link fs-4 mx-3" href="sanpham.html">📦Sản phẩm</a></li>
@@ -49,19 +56,45 @@
   </div>
 </nav>
 
-  <!--menu phụ-->
-  <div class="bg-dark text-white py-3 sub-menu">
-    <div class="container d-flex justify-content-center gap-5   fw-bold align-items-center">
 
-      <a href="phukien.html" class="text-white fs-5 mx-5 text-decoration-none">🎧Phụ kiện</a>
-      <a href="dienthoai.html" class="text-white fs-5 mx-5 text-decoration-none">📱Điện thoại</a>
-      <a href="laptop.html" class="text-white fs-5 mx-5 text-decoration-none">💻Laptop</a>
-      <a href="dongho.html" class="text-white fs-5 mx-5 text-decoration-none">⌚Đồng hồ</a>
-      <a href="mayanh.html" class="text-white fs-5 mx-5 text-decoration-none">📷Máy ảnh</a>
+<!-- Thanh menu -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark py-3 con-cac">
+  <div class="container d-flex justify-content-between align-items-center">
+    
+    <!-- Logo hoặc tiêu đề nếu có -->
+
+    <!-- Nút toggle cho mobile (sát phải) -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#submenu"
+      aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Các mục menu -->
+    <div class="collapse navbar-collapse justify-content-center fw-bold" id="submenu">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item mx-2">
+          <a class="nav-link fs-5 text-white" href="phukien.html">🎧 Phụ kiện</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link fs-5 text-white" href="dienthoai.html">📱 Điện thoại</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link fs-5 text-white" href="laptop.html">💻 Laptop</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link fs-5 text-white" href="dongho.html">⌚ Đồng hồ</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link fs-5 text-white" href="mayanh.html">📷 Máy ảnh</a>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
+</div>
+</head>
   <!-- Phần chi tiết sản phẩm -->
-  <div class="container py-5">
+  <div class="container py-5" style="margin-top: 20% !important;">
     <div id="product-detail" class="row justify-content-center">
       <h3 class="text-center">Đang tải sản phẩm...</h3>
     </div>
